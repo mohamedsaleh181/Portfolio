@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/Header';
+import { useState } from 'react';
+import Increament from "./components/increament"
+import Decreament from "./components/decreament"
 
 function App() {
+  const [number, setNumber]= useState(0);
+  
+  const increamentNumber = ()=>{
+    setNumber(number + 1)
+  }
+  const decreamentNumber = ()=>{
+    setNumber(number - 1)
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header title="Counter App"></Header>
       </header>
+      <div className="text-center">
+        <h1 className="mb-5">{number}</h1>
+        <Increament increamentNumber={increamentNumber}></Increament>
+        <Decreament decreamentNumber={decreamentNumber}></Decreament>
+      </div>
     </div>
   );
 }
 
 export default App;
+
