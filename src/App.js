@@ -1,30 +1,29 @@
-import Header from './components/Header';
-import { useState } from 'react';
-import Increament from "./components/increament"
-import Decreament from "./components/decreament"
 
-function App() {
-  const [number, setNumber]= useState(0);
-  
-  const increamentNumber = ()=>{
-    setNumber(number + 1)
-  }
-  const decreamentNumber = ()=>{
-    setNumber(number - 1)
-  }
-  
+import { BrowserRouter as Router,Route, Routes } from 'react-router-dom';
+import Counter from './pages/counter'
+import Shop from './pages/shop'
+import Home from './pages/home'
+import About from './pages/about'
+import NavBar from './components/NavBar';
+import Product from './components/product';
+import NotFound from './pages/notFound/NotFound';
+
+
+function App() {  
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header title="Counter App"></Header>
-      </header>
-      <div className="text-center">
-        <h1 className="mb-5">{number}</h1>
-        <Increament increamentNumber={increamentNumber}></Increament>
-        <Decreament decreamentNumber={decreamentNumber}></Decreament>
-      </div>
-    </div>
-  );
+    <Router>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="/counter" element={<Counter/>}></Route>
+        <Route path="/shop" element={<Shop/>}></Route>
+        <Route path="/about" element={<About/>}></Route>
+        <Route path="/shop/product/:id" element={<Product/>}></Route>
+
+        <Route path="*" element={<NotFound/>}></Route>
+      </Routes>
+    </Router>
+  )
 }
 
 export default App;
