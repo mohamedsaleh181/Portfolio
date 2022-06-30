@@ -7,6 +7,7 @@ import About from './pages/about'
 import NavBar from './components/NavBar';
 import Product from './components/product';
 import NotFound from './pages/notFound/NotFound';
+import Todo from './pages/todoList/Todo';
 
 
 function App() {  
@@ -18,6 +19,7 @@ function App() {
         <Route path="/counter" element={<Counter/>}></Route>
         <Route path="/shop" element={<Shop/>}></Route>
         <Route path="/about" element={<About/>}></Route>
+        <Route path="/todoList" element={<Todo/>}></Route>
         <Route path="/shop/product/:id" element={<Product/>}></Route>
 
         <Route path="*" element={<NotFound/>}></Route>
