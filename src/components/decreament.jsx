@@ -1,12 +1,20 @@
-const Decreament = (props) => {
+import { useDispatch } from 'react-redux';
+import { decrement } from '../reduxKit/features/counterSlice';
+const Decreament = () => {
+
+  const dispatch = useDispatch();
+  const decreamentNumber = ()=>{
+      dispatch(decrement())
+  }
+
     return (
       <>
         
-        <button type="button" onClick={props.decreamentNumber} className="btn btn-primary mx-5">
+        <button type="button" onClick={decreamentNumber} className="btn btn-primary mx-5">
           Decreament -
         </button>
       </>
     );
   };
   export default Decreament;
-  
+ 

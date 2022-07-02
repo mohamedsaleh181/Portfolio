@@ -1,22 +1,27 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import {getProductList} from '../../reduxKit/features/productListSlice'
+import Spinner from "react-bootstrap/Spinner";
 
 const Shop= ()=>{
-
+    const dispatch = useDispatch();
     useEffect(()=>{
-        fitchProducts();
-    },[])
+        // fitchProducts();
+        dispatch(getProductList())
+    },[dispatch])
 
+    const {products, loading} = useSelector( array => array.list)
+    // const fitchProducts=()=>{
+    //     fetch('https://fakestoreapi.com/products')
+    //         .then(res=>res.json())
+    //         .then(json=>setProduct(json))
+    // }
+    
+    // const [products,setProduct]= useState([]);
 
-    const fitchProducts=()=>{
-        fetch('https://fakestoreapi.com/products')
-            .then(res=>res.json())
-            .then(json=>setProduct(json))
-    }
-    const [products,setProduct]= useState([]);
-    // console.log(products)
     return(
-        <>{products.length>0?(
+        <>{ !loading && products ?(
 
             <div className="row">
                 {products.map((item,i)=>{
@@ -39,12 +44,14 @@ const Shop= ()=>{
                 })}
             </div>
         ):(
-            <h1>Loading....</h1>
+            // <h1>Loading....</h1>
+            <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+            </Spinner>
         )
             
         }
         </>
-        // <h1>Hello from shop</h1>
     )
         
     

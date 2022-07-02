@@ -28,6 +28,12 @@ const todoReducer = (state=initialState,action)=>{
     switch (action.type){
         case "ADD_TODO":
             return {...state , todoList: [...state.todoList , action.payload]}
+            // return {...state , counter: state.couneter+1}
+            // return 
+
+
+
+
         case "DELETE_TODO":
             return {...state , todoList: [...state.todoList.filter((item,i) => {
                 console.log(item)

@@ -1,4 +1,13 @@
-const TodoList = ({ todos,deleteTodo }) => {
+import { useSelector, useDispatch } from 'react-redux';
+import { deleteTodoItem } from '../../reduxKit/features/todoSlice'
+
+const TodoList = () => {
+    const dispatch = useDispatch();
+    const todos = useSelector(arr => arr.todo.todoList)
+    const deleteTodo = (index)=>{
+      dispatch(deleteTodoItem(index));
+    }
+
     const todosList =
       todos && todos.length > 0 ? (
         todos.map((todo, i) => {

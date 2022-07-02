@@ -21,6 +21,7 @@ const NavBar = () => {
           <li className="list-item">
               <Link to="/todoList">Todo List</Link>
           </li>
+          
         </ul>
       </nav>
     );
