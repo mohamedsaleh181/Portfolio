@@ -8,6 +8,7 @@ import NavBar from './components/NavBar';
 import Product from './components/product';
 import NotFound from './pages/notFound/NotFound';
 import Todo from './pages/todoList/Todo';
+import Signup from './pages/signUp'
 
 
 function App() {  
@@ -20,6 +21,7 @@ function App() {
         <Route path="/shop" element={<Shop/>}></Route>
         <Route path="/about" element={<About/>}></Route>
         <Route path="/todoList" element={<Todo/>}></Route>
+        <Route path="/register" element={<Signup/>}></Route>
         <Route path="/shop/product/:id" element={<Product/>}></Route>
 
         <Route path="*" element={<NotFound/>}></Route>

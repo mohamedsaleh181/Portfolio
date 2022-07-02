@@ -45,9 +45,11 @@ const Shop= ()=>{
             </div>
         ):(
             // <h1>Loading....</h1>
-            <Spinner animation="border" role="status">
+            <div className="d-flex justify-content-sm-center mt-5 pt-5">
+                <Spinner animation="border" role="status">
                 <span className="visually-hidden">Loading...</span>
-            </Spinner>
+                </Spinner>
+            </div>
         )
             
         }

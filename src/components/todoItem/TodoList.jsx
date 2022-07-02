@@ -12,18 +12,18 @@ const TodoList = () => {
       todos && todos.length > 0 ? (
         todos.map((todo, i) => {
           return (
-            <div  key={i} className="d-flex align-items-center border my-3">
+            <div  key={i} className="d-flex w-50 mx-auto justify-content-sm-between align-items-center border">
               <ul>
-              <li className="border d-flex">
-              <div className="text">
-                <p>Title : {todo.title}</p>
-                <p>Content : {todo.content}</p>
+                <li className="list-unstyled">
+                  <div className="d-flex flex-column pt-4 justify-content-lgcenter text">
+                    <p className='text-dark text-start fw-bold fs-5'>Title : {todo.title}</p>
+                    <p className='text-dark text-start fw-bold fs-5'>Content : {todo.content}</p>
+                  </div>
+                </li>
+              </ul>
+              <div className="btn-wrapper mx-5">
+                <button className="btn btn-danger btn-lg" onClick={()=>deleteTodo(i)}>Remove</button>
               </div>
-              </li>
-            </ul>
-            <div className="btn-wrapper mx-5">
-              <button className="btn btn-danger btn-sm" onClick={()=>deleteTodo(i)}>x</button>
-            </div>
             </div>
           );
         })

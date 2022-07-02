@@ -29,10 +29,10 @@ const Product= ()=>{
     return(<>
     
         {!loading && product? (
-            <div className="col-4 p-3 m-1 col-3">
-            <div className="card m-auto text-center" style={{width: '18rem'}}>
+            <div className="col-4 p-3 m-1 col-3 mx-auto w-50">
+            <div className="card m-auto text-center py-4 w-75" >
                 <img className="card-img-top w-25 m-auto" src={product.image} alt="Card image cap"/>
-                <div className="card-body">
+                <div className="card-body pt-5">
                     <h5 className="card-title">{product.title}</h5>
                     <p className="card-text">{product.description}</p>
                     <p className="card-text">{product.price}</p>
@@ -40,7 +40,12 @@ const Product= ()=>{
             </div>
         </div>
         ):(
-            <h1>Loading....</h1>
+            // <h1>Loading....</h1>
+            <div className="d-flex justify-content-sm-center mt-5 pt-5">
+                <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
         )
 
         }

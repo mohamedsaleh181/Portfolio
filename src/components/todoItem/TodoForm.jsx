@@ -24,25 +24,31 @@ const TodoForm = () => {
 
   return (
     <div>
-      <h3 className="text-muted mb-4">Add a TODO</h3>
+      <h3 className="mb-4">Add a TODO</h3>
 
       <form onSubmit={handleSubmission}>
-        Title <br />
-        <input
-          type="text"
-          name="title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <br />
-        Content <br />
-        <textarea
-          name="content"
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-        ></textarea>
-        <br />
-        <button className="my-4 btn btn-primary btn-sm px-4" type="submit">
+        <div className="d-flex justify-content-center my-5">
+          <p className="text-dark fw-bold fs-4 mx-5">Title </p>
+          <input
+            className="w-50 form-control"
+            type="text"
+            name="title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div className="d-flex justify-content-center my-2">
+          <p className="text-dark fw-bold fs-4 mx-4">Content </p>
+          <textarea
+            className="w-50 form-control"
+            name="content"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          ></textarea>
+        </div>
+        
+
+        <button className="my-4 btn btn-primary btn-sm px-4 w-25" type="submit">
           Add Todo
         </button>
       </form>
