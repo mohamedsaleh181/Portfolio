@@ -31,7 +31,7 @@ export const info = {
     "Flutter",
   ],
   github: "https://github.com/mohamedsaleh181",
-	linkedin: "linkedin.com/in/mohamed-saleh-774b0b10a",
+	linkedin: "https://linkedin.com/in/mohamed-saleh-774b0b10a",
 };
 
 

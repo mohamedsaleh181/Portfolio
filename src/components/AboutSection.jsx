@@ -38,8 +38,8 @@ function AboutSection() {
               }}
             />
           </Stack>
-      <Grid container>
-        <Grid item md={7}>
+      <Grid container sx={{justifyContent:'center'}}>
+        <Grid item md={7} sx={{justifyContent:'center',alignItems:'center',textAlign:{xs:'center',md:'left'}}}>
           {/* <Container> */}
           
           <Typography
@@ -61,7 +61,7 @@ function AboutSection() {
           >
            {
              info.skills.map((skill,i)=>{
-             return <Grid item key={i}>
+             return <Grid item key={i} sx={{margin: 'auto',justifyContent:'center',alignItems:'center',textAlign:{xs:'center',md:'left'} }}>
               <Button variant="contained" color="error">
                 {skill}
               </Button>
@@ -71,8 +71,8 @@ function AboutSection() {
           </Grid>
           {/* </Container> */}
         </Grid>
-        <Grid item xs={5} >
-      <Avatar alt="Cindy Baker" align='top' src={image} sx={{ width: 400, height: 400,mx:'1rem' }}/>
+        <Grid item xs={12} sm={5}  >
+      <Avatar alt="Cindy Baker" align='top' src={image} sx={{ width: {xs:250, sm:400}, height: {xs:250, sm:400},mx:'1rem' }}/>
         </Grid>
       </Grid>
     </Box>

@@ -42,11 +42,11 @@ export default function Projects() {
     />
   </Stack>
       
-      <Grid mx='auto' container rowSpacing={6} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container rowSpacing={6} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
        {
            projects.map((project,i)=>{
-            return <Grid item key={i} xs={12} sm={6} md={4}>
-            <Card sx={{ maxWidth: 345 , height: 330, backgroundColor:'#141421', color:'white'}}>
+            return <Grid item key={i} xs={12} sm={6} md={4} sx={{justifyContent:'center',alignItems:'center', display:'flex'}}>
+            <Card sx={{width: 345 , height: 330, backgroundColor:'#141421', color:'white', }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
