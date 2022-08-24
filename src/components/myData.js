@@ -2,6 +2,7 @@ import image from '../assets/profile.jpg'
 
 
 export const info = {
+    template:'https://www.mehdibha.codehub.tn/',
   name: "Mohamed Saleh",
   title: "Hi all, I'm Mohamed Saleh",
   prev: "I make awesome websites",
