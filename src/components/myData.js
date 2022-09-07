@@ -1,6 +1,6 @@
 import image from '../assets/profile.jpg'
 
-
+const resumeId = '1OCNc8z41qIeFydkjQdwSNoMm9JTVgf7z'
 export const info = {
     template:'https://www.mehdibha.codehub.tn/',
   name: "Mohamed Saleh",
@@ -9,7 +9,7 @@ export const info = {
   description:
     "Front-end & Cross Platform developer, Intensive Code Camp (3-months scholarship) @ ITI, Javascript, React, React Native, Angular, HTML, CSS, SASS, Bootstrap and Tailwind.",
   resumeLink:
-    "https://drive.google.com/u/0/uc?id=1_mSM-PInLueb_tX_5SyEkZ7Kt7r1z-Fk&export=download",
+    `https://drive.google.com/uc?export=download&id=${resumeId}`,
   image: {image},
   profile: '../assets/profile.jpg',
 
