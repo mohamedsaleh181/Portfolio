@@ -55,8 +55,8 @@ export const projects = [
 	{
 		title: "Freshio",
 		desc: "Healthy food website. React bootstrap firebase react-router react-hooks axio framer-motion matrerial-ui chatbot",
-		github: "https://github.com/mohamedsaleh181/Freshio",
-		demo: "https://ziadhosny.github.io/Freshio/",
+		github: "https://github.com/mohamedsaleh181/Freshio-app",
+		demo: "https://freshio-app.netlify.app/",
         image: 'https://lh5.googleusercontent.com/-5x5V4xhsbrEAu2Vo1aDc3rkU3beX_vVcpVNzk6H2n0dUk-sB9Ud7QR8PojEX2b4r9Y=w2400',
 	},
 	{
@@ -86,6 +86,13 @@ export const projects = [
 		github: "https://github.com/mohamedsaleh181/todo-list",
 		demo: "https://mohamedsaleh181.github.io/todo-list/",
         image: 'https://lh3.googleusercontent.com/jthb2FtMO-79V3PDS0O74AwCFAZbSP2rrIvrxGOXYJNDY2U0kgDCOxvFeEwEiXFN8VQ=w2400',
+	},
+	{
+		title: "Netflix-Home-Page",
+		desc: "Netflix home page with firebase authontication and cloud firestore to store favourite movies , firebase , react-router-dom , axios",
+		github: "https://github.com/mohamedsaleh181/netflix-home-page",
+		demo: "https://netflix-app-d8ea9.web.app/",
+        image: 'https://lh4.googleusercontent.com/7gYWPw1goMFpu8tRDcz22iHpvUshTUwfqxzsRCdBS8MF-rFR_jEpjLPLX7a7CoUXrPw=w2400',
 	},
 	
 ];
