@@ -1,6 +1,7 @@
 import image from '../assets/profile.jpg'
 
-const resumeId = '1OCNc8z41qIeFydkjQdwSNoMm9JTVgf7z'
+// const resumeId = '1OCNc8z41qIeFydkjQdwSNoMm9JTVgf7z'
+const resumeId = '1Hh0oNsdCmA5XbSBodeUCivLgBZrDqQrk'
 export const info = {
     template:'https://www.mehdibha.codehub.tn/',
   name: "Mohamed Saleh",
@@ -91,7 +92,7 @@ export const projects = [
 		title: "Netflix-Home-Page",
 		desc: "Netflix home page with firebase authontication and cloud firestore to store favourite movies , firebase , react-router-dom , axios",
 		github: "https://github.com/mohamedsaleh181/netflix-home-page",
-		demo: "https://netflix-app-d8ea9.web.app/",
+		demo: "https://631dbe22780f1a0d55cb2fc1--netflix-home-app.netlify.app/",
         image: 'https://lh4.googleusercontent.com/7gYWPw1goMFpu8tRDcz22iHpvUshTUwfqxzsRCdBS8MF-rFR_jEpjLPLX7a7CoUXrPw=w2400',
 	},
 	
