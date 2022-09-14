@@ -1,7 +1,9 @@
 import image from '../assets/profile.jpg'
 
 // const resumeId = '1OCNc8z41qIeFydkjQdwSNoMm9JTVgf7z'
-const resumeId = '1Hh0oNsdCmA5XbSBodeUCivLgBZrDqQrk'
+// const resumeId = '1Hh0oNsdCmA5XbSBodeUCivLgBZrDqQrk'
+const resumeId = '1Ixc4B06TLLIdxzTOkLZSR9vVigDjBPW6'
+
 export const info = {
     template:'https://www.mehdibha.codehub.tn/',
   name: "Mohamed Saleh",
