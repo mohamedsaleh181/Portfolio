@@ -2,7 +2,9 @@ import image from '../assets/profile.jpg'
 
 // const resumeId = '1OCNc8z41qIeFydkjQdwSNoMm9JTVgf7z'
 // const resumeId = '1Hh0oNsdCmA5XbSBodeUCivLgBZrDqQrk'
-const resumeId = '1Ixc4B06TLLIdxzTOkLZSR9vVigDjBPW6'
+// const resumeId = '1Ixc4B06TLLIdxzTOkLZSR9vVigDjBPW6'
+https://drive.google.com/file/d/1Ixc4B06TLLIdxzTOkLZSR9vVigDjBPW6/view?usp=sharing
+const resumeId = '19aGf8X012oiBWeGDjc6h90BGMiZko_lS'
 
 export const info = {
     template:'https://www.mehdibha.codehub.tn/',
